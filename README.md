@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-Com certeza! Adicionar emojis pode deixar o README.md mais amigável e visualmente interessante.
-
-Aqui está o texto do seu README com algumas sugestões de emojis:
-
-Markdown
-
 # 🍔 Landing Page - Artesani Burguer's 🍔
 =======
 # Landing Page - Artesani Burguer's
