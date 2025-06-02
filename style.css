@@ -1,0 +1,26 @@
+:root {
+    --cor-primaria: #A03232;
+    --cor-secundaria: #FFC107;
+    --cor-texto: #333333;
+    --cor-fundo: #FFFFFF;
+    --cor-destaque:;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    padding: 1em 0;
+    color: white;
+}
