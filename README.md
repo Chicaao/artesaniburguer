@@ -1,9 +1,3 @@
-Claro! Um arquivo README.md é essencial para qualquer projeto, mesmo os mais simples, pois ajuda a entender rapidamente do que se trata e como utilizá-lo.
-
-Aqui está uma sugestão de README.md para a landing page da "Artesani Burguer's". Você pode copiar e colar isso em um arquivo chamado README.md na raiz do seu projeto.
-
-Markdown
-
 # Landing Page - Artesani Burguer's
 
 ## Descrição do Projeto
