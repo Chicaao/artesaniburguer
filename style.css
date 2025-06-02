@@ -134,33 +134,79 @@ header nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
+#historia {
+    background-color: var(--cor-fundo-geral);
+}
+
+#historia .container {
+    max-width: 43.75rem;
+    text-align: center;
+}
+
+#historia h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
+
+#historia p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--cor-texto-principal);
+    margin-bottom: 1rem;
+}
+
+#cardapio {
+    background-color: #FFF;
+}
+
+#cardapio h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 2.5rem;
+}
+
+.menu-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 2rem;
+}
+
 #cardapio .menu-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--cor-fundo-geral);
+    border: 1px solid #E0D9C9;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.25rem 0.5rem rgba(78, 52, 46, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cardapio .menu-item:hover {
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.5rem 1rem rgba(78, 52, 46, 0.15);
 }
 
 #cardapio .menu-item img {
     width: 100%;
-    max-width: 25rem;
+    max-width: 15.625rem;
     height: auto;
     border-radius: 0.3125rem;
     margin: 0 auto 1rem auto;
+    border: 3px solid var(--cor-secundaria);
 }
 
 #cardapio .menu-item h3 {
-    font-family: var(--fonte-principal);
-    font-size: 1.5rem;
+    font-family: var(--fonte-destaque);
+    font-size: 1.75rem;
     color: var(--cor-primaria);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 #cardapio .menu-item p {
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: var(--cor-texto-principal);
+    min-height: 4.5rem;
 }
 
 .footer {
