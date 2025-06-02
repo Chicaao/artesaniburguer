@@ -6,7 +6,8 @@
     --cor-texto-sobre-fundo-claro: #111111;
     --cor-acento-primario: #f97316;
     --cor-acento-secundario: #ffab00;
-    --cor-borda:#333333;
+    --cor-borda-clara:#333333;
+    --cor-borda-escura:#dddddd;
     --fonte-principal: 'Poppins', sans-serif;
     --fonte-destaque: 'Lobster', cursive;
 }
@@ -20,7 +21,7 @@
 body {
     font-family: var(--fonte-principal);
     background-color: var(--cor-fundo-principal);
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -33,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--cor-destaque-texto);
+    color: var(--cor-acento-primario);
 }
 
 img {
@@ -43,15 +44,15 @@ img {
 
 h1, h2, h3 {
     font-family: var(--fonte-destaque);
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
     margin-bottom: 0.8rem;
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto-claro);
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
     padding: 1rem 0;
-    border-bottom: 0.1875rem solid var(--cor-secundaria);
+    border-bottom: 0.1875rem solid var(--cor-acento-primario);
 }
 
 header .container {
@@ -73,34 +74,41 @@ header nav ul li {
     margin-left: 1.25rem;
 }
 
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
 header nav ul li a {
-    color: var(--cor-texto-claro);
+    color: var(--cor-texto-sobre-fundo-escuro);
     font-weight: bold;
     transition: color 0.3s ease;
+    display: block;
+    padding: 0.5rem 0;
 }
 
 header nav ul li a:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-acento-primario);
 }
 
 #hero {
     padding: 4rem 0;
     text-align: center;
+    background-color: var(--cor-fundo-principal);
 }
 
 #hero h1 {
     font-size: 2.8rem;
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
     margin-bottom: 0.5rem;
 }
 
 #hero .carousel {
-    background-color: #fff;
-    border: 0.125rem dashed var(--cor-secundaria);
+    background-color: var(--cor-acento-secundario);
+    border: 0.125rem dashed var(--cor-acento-secundario);
     padding: 3rem;
     margin: 2rem auto;
     max-width: 50rem;
-    color: var(--cor-texto-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
 }
 
 #hero .carousel p {
@@ -109,8 +117,8 @@ header nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto-principal);
+    background-color: var(--cor-acento-primario);
+    color: var(--cor-texto-sobre-fundo-escuro);
     padding: 0.8rem 2rem;
     border-radius: 0.3125rem;
     font-size: 1.2rem;
@@ -121,7 +129,7 @@ header nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #ff8f00;
+    background-color: var(--cor-acento-secundario);
     transform: translateY(-0.125rem);
 }
 
@@ -136,7 +144,8 @@ header nav ul li a:hover {
 }
 
 #historia {
-    background-color: var(--cor-fundo-geral);
+    background-color: var(--cor-fundo-secundario);
+    color: var(--cor-acento-primario);
 }
 
 #historia .container {
@@ -145,24 +154,18 @@ header nav ul li a:hover {
 }
 
 #historia h2 {
-    color: var(--cor-primaria);
+    color: var(--cor-acento-primario);
     margin-bottom: 1.5rem;
 }
 
 #historia p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--cor-texto-principal);
     margin-bottom: 1rem;
 }
 
 #cardapio {
-    background-color: #FFF;
-}
-
-#cardapio h2 {
-    color: var(--cor-primaria);
-    margin-bottom: 2.5rem;
+    background-color: var(--cor-fundo-principal);
 }
 
 .menu-item-container {
@@ -172,14 +175,15 @@ header nav ul li a:hover {
 }
 
 #cardapio .menu-item {
-    background-color: var(--cor-fundo-geral);
-    border: 1px solid #E0D9C9;
+    background-color: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-borda-escura);
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
     padding: 1.5rem;
     box-shadow: 0 0.25rem 0.5rem rgba(78, 52, 46, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--cor-texto-sobre-fundo-escuro);
 }
 
 #cardapio .menu-item:hover {
@@ -193,45 +197,46 @@ header nav ul li a:hover {
     height: auto;
     border-radius: 0.3125rem;
     margin: 0 auto 1rem auto;
-    border: 3px solid var(--cor-secundaria);
+    border: 3px solid var(--cor-acento-primario);
 }
 
 #cardapio .menu-item h3 {
     font-family: var(--fonte-destaque);
     font-size: 1.75rem;
-    color: var(--cor-primaria);
+    color: var(--cor-acento-primario);
     margin-bottom: 0.75rem;
 }
 
 #cardapio .menu-item p {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: var(--cor-texto-principal);
     min-height: 4.5rem;
 }
 
 .footer {
-    background-color: var(--cor-texto-principal);
-    color: var(--cor-fundo-geral);
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-sobre-fundo-escuro);
     padding: 2rem 0;
     text-align: center;
     margin-top: 3rem;
+    border-top: 3px solid var(--cor-acento-primario);
 }
 
 .footer .logo-footer {
     height: 70px;
     margin-bottom: 1rem;
+    display: inline-block;
 }
 
 .social-icons a {
-    color: var(--cor-fundo-geral);
+    color: var(--cor-texto-sobre-fundo-escuro);
     font-size: 1.8rem;
     margin: 0 0.75rem;
     transition: color 0.3 ease;
 }
 
 .social-icons a:hover {
-    color: var(--cor-secundaria);
+    color: var(--cor-acento-primario);
 }
 
 footer p {
