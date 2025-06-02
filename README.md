@@ -37,4 +37,3 @@ A landing page está estruturada com as seguintes seções principais:
 
 Não há necessidade de instalação de dependências ou processos de build para visualizar esta página estática.
 
-## Estrutura dos Arquivos (Sugerida)
