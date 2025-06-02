@@ -3,14 +3,24 @@
     --cor-secundaria: #FFAB00;
     --cor-texto-principal: #43342e;
     --cor-fundo-geral: #fff8e1;
+    --cor-texto-claro: #FFFFFF;
     --cor-destaque-texto: #d32f2f;
+
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-destaque: 'Lobster', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo-geral);
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
 }
 
 .container {
@@ -19,8 +29,96 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: var(--cor-destaque-texto);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.8em;
+}
+
 header {
     background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
     padding: 1em 0;
-    color: white;
+    border-bottom: 3px solid var(--cor-secundaria);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--cor-secundaria);
+}
+
+#hero {
+    padding: 4em 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.8em;
+    color: var(--cor-texto-principal);
+    margin-bottom: 0.5em;
+}
+
+#hero .carousel {
+    background-color: #fff;
+    border: 2px dashed var(--cor-secundaria);
+    padding: 3em;
+    margin: 2em auto;
+    max-width: 800px;
+    color: var(--cor-texto-principal);
+}
+
+#hero .carousel p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-principal);
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #ff8f00;
+    transform: translateY(-2px);
 }
