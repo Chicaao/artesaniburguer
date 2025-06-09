@@ -237,7 +237,7 @@ header nav ul li a:hover {
 }
 
 #contato {
-    background-color: var(--cor-acento-secundario);
+    background-color: var(--cor-fundo-secundario);
     color: var(--cor-texto-sobre-fundo-escuro);
     text-align: center;
 }
