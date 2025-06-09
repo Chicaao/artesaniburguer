@@ -333,6 +333,10 @@ footer p { /* Texto de copyright */
     cursor: pointer;
 }
 
+.menu-toggle i {
+    font-weight: 900;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
