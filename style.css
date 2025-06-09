@@ -331,6 +331,8 @@ footer p { /* Texto de copyright */
     color: var(--cor-texto-sobre-fundo-escuro);
     font-size: 1.8rem;
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
 }
 
 .menu-toggle i {
@@ -358,6 +360,7 @@ footer p { /* Texto de copyright */
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+        z-index: 1000;
     }
 
     .main-nav.is-open {
