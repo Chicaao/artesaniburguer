@@ -276,6 +276,19 @@ header nav ul li a:hover {
     margin-top: 1rem;
 }
 
+.map-placeholder {
+    background-color: var(--cor-borda-escura);
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    color: var(--cor-texto-sobre-fundo-escuro);
+}
+
+.map-placeholder p {
+    font-size: 1.2rem;
+    color: var(--cor-acento-secundario);
+}
+
 /* Estilos do Footer */
 footer {
     background-color: var(--cor-fundo-principal); /* Fundo preto */
