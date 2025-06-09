@@ -236,6 +236,46 @@ header nav ul li a:hover {
     min-height: 4.5rem;
 }
 
+#contato {
+    background-color: var(--cor-acento-secundario);
+    color: var(--cor-texto-sobre-fundo-escuro);
+    text-align: center;
+}
+
+.contact-details {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    max-width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--cor-acento-primario);
+    margin-right: 0.8rem;
+    width: 1.8rem;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+.contact-item strong {
+    color: var(--cor-acento-secundario);
+}
+
+.contact-cta {
+    margin-top: 1rem;
+}
+
 /* Estilos do Footer */
 footer {
     background-color: var(--cor-fundo-principal); /* Fundo preto */
