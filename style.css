@@ -307,3 +307,64 @@ footer p { /* Texto de copyright */
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
+/* --- ESTILOS DE RESPONSIVIDADE E MENU HAMBÚRGUER --- */
+
+/* Por padrão em telas grandes, o botão de menu é escondido */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--cor-texto-sobre-fundo-escuro);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--cor-fundo-secundario);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .main-nav.is-open {
+        display: block;
+        transform: translateX(0);
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0;
+    }
+
+    .main-nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        display: block;
+        padding: 1.5rem;
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--cor-borda-escura);
+    }
+
+    .main-nav ul li:last-child a {
+        border-bottom: none;
+    }
+}
