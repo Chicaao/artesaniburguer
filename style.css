@@ -342,6 +342,10 @@ footer p { /* Texto de copyright */
         display: block;
     }
 
+    .menu-toggle i {
+    font-weight: 900;
+    }
+
     .main-nav {
         display: none;
         position: fixed;
