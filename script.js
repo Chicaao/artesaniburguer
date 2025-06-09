@@ -20,11 +20,11 @@
         if (isExpanded) {
             console.log('Tentando trocar para o ícone X (fa-times)');
             icon.classList.remove('fa-bars');
-            icon.classList.add('fa-xmark')
+            icon.classList.add('fa-times')
         } else {
             console.log('Tentando trocar para o ícone de barras (fa-bars)');
             icon.classList.remove('fa-times');
-            icon.classList.add('fa-xmark');
+            icon.classList.add('fa-bars');
         }
     })
   }

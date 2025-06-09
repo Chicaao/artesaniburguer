@@ -347,7 +347,7 @@ footer p { /* Texto de copyright */
     }
 
     .main-nav {
-        display: none;
+        visibility: hidden;
         position: fixed;
         top: 0;
         right: 0;
@@ -361,8 +361,9 @@ footer p { /* Texto de copyright */
     }
 
     .main-nav.is-open {
-        display: block;
+        visibility: visible;
         transform: translateX(0);
+        transition: transform 0.3s ease-in-out, visibility 0s;
     }
 
     .main-nav ul {
