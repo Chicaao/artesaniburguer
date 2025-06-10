@@ -425,7 +425,7 @@ footer p { /* Texto de copyright */
         background-color: var(--cor-fundo-secundario);
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
         transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, visibility 0.3s;
         z-index: 1000;
     }
 
