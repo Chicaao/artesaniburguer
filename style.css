@@ -161,6 +161,7 @@ header nav ul li a:hover {
 .carousel-slide img {
     display: block;
     width: 100%;
+    max-height: 400px;
     height: auto;
     object-fit: contain;
 }
