@@ -254,7 +254,7 @@ header nav ul li a:hover {
 
 #historia span {
     font-family: var(--fonte-destaque);
-    color: var(--cor-texto-sobre-fundo-escuro);
+    color: var(--cor-acento-primario);
 }
 
 /* Estilos da Seção Cardápio (#cardapio) */
